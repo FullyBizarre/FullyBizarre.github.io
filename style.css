@@ -1,0 +1,542 @@
+/* This is for the bodies of all the tabs */	
+body 
+{
+	background-image: url("./images/background.jpg");
+	background-size: cover;
+	background-attachment:fixed;
+}
+
+
+@font-face 
+{
+	font-family:'CustomFont4';
+	src: url('fonts/CustomFont4.ttf') format('truetype');
+}
+
+
+/* This is for the index tab */
+
+/*if the screen width is between 768px and 1280px , will use this layout*/
+.indexbody
+{
+	font-family: 'CustomFont4', serif;
+	font-size: 1.8em;
+	font-weight: bold;
+	font-style: italic;
+	line-height: 1.3;
+	text-align: center;
+	box-sizing:border-box;
+}
+
+img
+{
+	height: 60vh;
+	width: 60vw;
+	object-fit: contain;		
+}
+
+
+#pagecontainer
+{
+	
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows:auto auto auto auto auto auto auto auto auto auto;
+
+}
+
+
+#page0{color:white; background: #455937; border: 4px solid white; border-radius: 20px;}
+#page1{color:white; background: #455937; border: 4px solid white; border-radius: 20px;}
+#page2{color:white; background:#455937; border: 4px solid white; border-radius: 20px;}
+#page3{color:white; background:#455937; border: 4px solid white; border-radius: 20px;}
+
+
+#hamIcon{display:none;}
+
+
+#indexheader
+{
+	color: black; 
+	background:#738A60; 
+	border-radius: 20px; 
+	padding: 10px; 
+	margin: auto; 
+	text-align: center; 
+	width: 95%;
+	margin: 20px auto;
+}
+
+
+#indexnav ul li
+{
+	list-style-type: none;
+}
+
+
+#menuicon
+{
+	display: none;
+}
+
+
+
+.indexpagename
+{
+	font-size: 1.5em;
+	color:white;
+	background:#455937; 
+	border-radius: 10px; 
+	padding: 10px; 
+	width: fit-content;
+	margin: 20px;
+	
+}
+
+.indexparagraph
+{
+	color: white;
+	font-size: 1.3em;
+	margin: auto;
+	padding: 20px; 
+	width: fit-content;
+}
+
+.Paraheader
+{
+	color: #E6B353;
+	font-size: 1.8em;
+}
+
+.Parasubheader
+{
+	color:#F5B63D;
+	font-size: 1.4em;
+}
+
+#page0
+{
+	grid-column: 1 / 31;
+	grid-row: 1 / 10;
+	height:  auto;
+	width: auto;
+}
+
+#FactButton
+{
+	background:#146317;
+	border: 5px solid white;
+	border-radius: 5px;
+	margin: 50px auto;
+}
+
+#ResetFacts
+{
+	background:#146317;
+	border: 5px solid white;
+	border-radius: 5px;
+	margin: 50px auto;	
+}
+
+#FactsHere
+{
+	border: 5px solid white;
+	border-radius: 10px;
+	width: fit-content;
+	font-size:200%;
+	height: auto;
+	margin: 40px auto;
+}
+
+#QRcode img
+{
+	height:30vh;
+	width: 30vw;
+}
+
+
+
+.paragrid
+{
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+
+.column1
+{
+	
+	text-align: center;
+
+}
+
+.column2
+{
+	
+	text-align: center;
+}
+
+
+
+#page1
+{
+	
+	grid-column: 1 / 31;
+	grid-row: 1 / 10;
+	height:  auto;
+	width: auto;
+	
+}
+
+#gamestartbutton
+{
+	background:#146317;
+	border: 5px solid white;
+	border-radius: 5px;
+	font-family: 'CustomFont4', serif;
+	margin: 40px;
+}
+
+
+#Minigame
+{
+	/* position: relative keeps the element in the normal page layout, but also allows you to move it relative to where it would normally be. Meaning that even if the element is moved, the original space is still reserved and other elements behave as if the element never moved.*/
+	/* the posistion: relative; also helps act as a ancestor to the position: absolute; in the player control, as position: absolute; looks for the nearest ancestor that has position: relative or absolute. This helps make the player positioned inside the game box and not relative to the whole webpage. Without the position: relative; in #Minigame, the player could be positioned relative to the page and outside the game area*/
+	position: relative;
+	background: white;
+	border: 5px solid black;
+	border-radius: 10px;
+	height: 800px;
+	margin: auto;
+	width:  500px;
+}
+
+#playercontrol
+{
+	position: absolute;
+	background: red;
+	width:100px;
+	height:50px;
+	left: 40%;
+}
+
+
+#page2
+{
+	
+	grid-column: 1 / 31;
+	grid-row: 1 / 10;
+	height: auto;
+	width: auto;
+	
+}
+
+
+.paragrid2
+{
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto auto auto;
+
+	
+}
+
+#page2indexpara1
+{
+	
+	grid-column: 1 / 10;
+	grid-row: 1 / 2;
+	font-size: 95%;
+	
+}
+
+#page2indexpara2
+{
+	
+	grid-column: 10 / 21;
+	grid-row: 1 / 2;
+	font-size: 95%;
+	
+}
+
+#page2indexpara3
+{
+	
+	grid-column:  1 / 10;
+	grid-row: 3 / 4;
+	font-size: 95%;
+	
+}
+
+#page2indexpara4
+{
+	
+	grid-column:  10 / 21;
+	grid-row: 3 / 4;
+	font-size: 95%;
+}
+
+#page2indexpara5
+{
+	
+	grid-column: 1 / 21;
+	grid-row: 5 / 6;
+	font-size: 90%;
+}
+
+#page2indexpara1photo
+{
+	grid-column: 1 / 9;
+	grid-row: 2 / 3;
+}
+
+#page2indexpara1photo img
+{
+	width: 70%;
+	height: auto;
+}
+
+
+#page2indexpara1photo2
+{
+	grid-column: 9 / 21;
+	grid-row: 2 / 3;
+}
+
+
+#page2indexpara1photo2 img
+{
+	width: 70%;
+	height: 70%;
+}
+
+
+#page2indexpara1photo3
+{
+	
+	grid-column:  1 / 9;
+	grid-row: 4 / 5;
+	
+}
+
+
+#page2indexpara1photo3 img
+{
+	width: 70%;
+	height: 70%;
+}
+
+
+#page2indexpara1photo4
+{
+	
+	grid-column:  9 / 21;
+	grid-row: 4 / 5;
+	
+}
+
+#page2indexpara1photo4 img
+{
+	width: 70%;
+	height: 70%;
+}
+
+#page2indexpara1photo5
+{
+	
+	grid-column:  1 / 21;
+	grid-row: 6 / 6;
+	
+}
+
+#page2indexpara1photo5 img
+{
+	width: 50%;
+	height: 50%;
+}
+
+#quizbtnSubmit
+{
+	color: white;
+	background:#146317;
+	border: 5px solid white;
+	border-radius: 5px;	
+	padding: 5px;
+	margin: 50px;
+	width: 10vw;
+	height: 10vh;
+	font-family: 'CustomFont4', serif;
+	font-size: 0.8em;
+}
+
+
+#quizreset
+{
+	color: white;
+	background:#146317;
+	border: 5px solid white;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 50px;
+	width: 10vw;
+	height: 10vh;
+	font-family: 'CustomFont4', serif;
+	font-size: 0.8em;
+}
+
+
+
+#page3
+{
+	
+	grid-column: 1 / 31;
+	grid-row: 1 / 10;
+	height:  auto;
+	width: auto;
+}
+
+
+#instalogo
+{
+	height: 7vh;
+	width: 7vw;
+	
+}
+
+/* menuicon is the name for this CSS animation*/
+@keyframes menuicon{
+0%{rotate:0}
+10%{rotate:36deg}
+20%{rotate:72deg}
+30%{rotate:108deg}
+40%{rotate:144deg}
+50%{rotate:180deg}
+60%{rotate:216deg}
+70%{rotate:252deg}
+80%{rotate:288deg}
+90%{rotate:324deg}
+100%{rotate:360deg}
+}
+
+/* menuiconreverse is the name for this CSS animation*/
+@keyframes menuiconreverse{
+0%{rotate:0}
+10%{rotate:-36deg}
+20%{rotate:-72deg}
+30%{rotate:-108deg}
+40%{rotate:-144deg}
+50%{rotate:-180deg}
+60%{rotate:-216deg}
+70%{rotate:-252deg}
+80%{rotate:-288deg}
+90%{rotate:-324deg}
+100%{rotate:-360deg}
+}
+
+/* this stores the menuicon animation into a class and makes it animate over 0.5 seconds */
+.anim1{animation: menuicon 0.5s;}
+
+/* this stores the menuiconreverse animation into a class and makes it animate over 0.5 seconds */
+.anim2{animation: menuiconreverse 0.5s;}
+
+
+@media (max-width: 800px) 
+{
+	#menuicon
+	{
+		display: block;
+		width: 30%;
+		height: 30%;
+		margin: auto;
+	}
+	
+	
+	 #indexnav ul
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+		/* default ul have a padding-left: 40; causing the ul to not be centered, the padding: 0; removes that padding and causes it to be centered again */
+		padding: 0;
+    }
+	
+	
+	.pagelist
+	{
+		
+		display: none;
+		
+	}
+	
+	
+	.dropdownclass
+	{
+		
+		display: grid;
+		
+	}
+	
+	
+	img
+	{
+		height: 80vh;
+		width: 80vw;	
+	}	
+	
+	
+	#QRcode img
+	{
+	height:40vh;
+	width: 40vw;
+	}
+	
+	
+	.indexbody
+	{
+		font-size: 1.5em;
+		margin: auto;
+		width: 100%;
+	}
+	
+	
+	.paragrid
+	{
+		display: block;
+	}
+	
+	
+	.paragrid2
+	{
+		display: block;	
+	}
+	
+	
+	#quizbtnSubmit
+	{
+		width: auto;
+		height: auto;
+	}
+	
+	
+	#quizreset
+	{
+		width: auto;
+		height: auto;
+	}
+	
+	
+	#gamestartbutton
+	{
+		height: auto;
+		width: auto;
+	}
+
+	
+	#instalogo
+	{
+		height: auto;
+		width: auto;	
+	}
+}
